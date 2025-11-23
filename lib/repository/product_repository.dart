@@ -4,7 +4,7 @@ import '../models/product_model.dart';
 
 class ProductRepository {
   Future<List<Product>> fetchUser() async{
-    final response = await http.get(Uri.parse("https://fakestoreapi.com/products"));
+    final response = await http.get(Uri.parse("https://api.github.com/users/athulsaji"));
 
     if(response.statusCode ==200){
       List data =jsonDecode(response.body);
